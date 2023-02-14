@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-left: 30rem;
+    margin-top: 10rem;
+    background: black;
+   transition: 2s all;
+}
+.parent:hover .element_1 {
+    transform: rotateY(-140deg);
+    transition: 2s;
+}
+.parent:hover .element_2{
+    transform: rotateY(140deg);
+    transition: 2s;
+}
+.element_1{
+    width: 300px;
+    height: 400px;
+    background: red;
+    transform-origin: left bottom ;
+    transition: 2s ease all;
+}
+.element_2{
+    width: 300px;
+    height: 400px;
+    background: red;
+    transform-origin: right top ;
+    transition: 2s ease all;
+}
+
+/* .element_1:hover{
+    transform: rotateY(-140deg);
+    transition-duration: 1s;
+}
+.element_2:hover{
+    transform: rotateY(140deg);
+    transition: 1s ; */
+}
